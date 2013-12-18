@@ -32,7 +32,14 @@
 </head>
 
 <body data-spy="scroll" data-target="#nav-wrap">
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 
    <!-- Header
@@ -49,6 +56,7 @@
                <a href="#"><img alt="" src="images/logo.png"></a>
             </div>
 
+ <div class="fb-like" data-href="https://www.facebook.com/lovedecoded.nitc" style="padding-top:15px; padding-left:20px;" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
 
             <nav id="nav-wrap">
 
@@ -61,8 +69,6 @@
 	               <li><a href="#qa">Questions & Answers</a></li>
                   <li><a href="#about">About Us</a></li>
 </ul>
-        
-
          </nav> 
 
          </div>
@@ -84,7 +90,7 @@
 			   <li>
 				   <div class="row">
 					   <div class="col full">
-						   <div class="slider-text" style="height:100%">
+						   <div class="slider-text" style="height:100%;width:100%">
 						<!--	   <h2><span>Love Decoded Team</span></h2> -->
 							   
 						   <img width="400px" height="500px" src="images/slide_image1.jpg"/>
@@ -205,27 +211,27 @@
 
             <div class="col materials-item">
                <div class="item-wrap">
-					   <a href="#" data-reveal-id="modal-03"><img src="images/portfolio/cosmic-sneakers.jpg" alt=""/></a>
+					   <a href="#" data-reveal-id="modal-03"><img src="images/portfolio/modals/baggage.jpg" alt=""/></a>
 					   <div class="materials-item-meta">
-						   <h5><a href="http://www.youtube.com">Video - Message</a></h5>
+						   <h5><a>Baggage - Love Decoded'12</a></h5>
 					   </div>
                </div>
 			   </div>
 
             <div class="col materials-item">
                <div class="item-wrap">
-					   <a href="#" data-reveal-id="modal-04"><img src="images/portfolio/cosmic-sneakers.jpg" alt=""/></a>
+					   <a href="#" data-reveal-id="modal-04"><img src="images/portfolio/modals/uvmime.jpg" alt=""/></a>
 					   <div class="materials-item-meta">
-						   <h5><a href="http://www.youtube.com">Video about Christianity</a></h5>
+						   <h5><a>UV Mime - Love Decoded'12</a></h5>
 					   </div>
                </div>
 			   </div>
 
             <div class="col materials-item">
                <div class="item-wrap">
-					   <a href="#" data-reveal-id="modal-05"><img src="images/portfolio/cosmic-sneakers.jpg" alt=""/></a>
+					   <a href="#" data-reveal-id="modal-05"><img src="images/portfolio/modals/setmefree.jpg" alt=""/></a>
 					   <div class="materials-item-meta">
-						   <h5><a href="http://www.youtube.com">Video about salvation</a></h5>
+						   <h5><a href="http://www.youtube.com">Set me free - Love Decoded'12</a></h5>
 					   </div>
                </div>
 			   </div>
@@ -310,19 +316,19 @@
       <!-- modal-03 -->
 	   <div id="modal-03" class="reveal-modal" style="width:500px">
 
-		   <object width="500" height="350"><param name="movie" value="http://www.youtube.com/v/nWY-6xBA0Pk" />
-		<embed src="http://www.youtube.com/v/nWY-6xBA0Pk"
+		   <object width="500" height="350"><param name="movie" value="http://www.youtube.com/v/grpYzoBOUZk" />
+		<embed src="http://www.youtube.com/v/grpYzoBOUZk" 
 			type="application/x-shockwave-flash" width="500" height="350" />
 				</object>
 
 		   <div class="description-box">
-			   <h4>Christianity</h4>
-			   <p>Jesus Christ is the only way for salvation.</p>
+			   <h4>Baggage skit - Love Decoded'12</h4>
+			   <p>Skit performed by Love Decoded team on Christmas program 2012. Performed by Ashish Thomas & Jaywin Varghese.</p>
              <span class="categories"><i class="icon-star"></i>Jesus Saves</span>
 		   </div>
 
          <div class="link-box">
-            <a href="">LINKS TO MORE MATERIALS</a>
+            <a href="http://skitguys.com/videos/item/baggage-skit">Courtesy - Skit guys</a>
 		      <a class="close-reveal-modal">Close</a>
          </div>
 
@@ -331,20 +337,19 @@
       <!-- modal-04 -->
 	   <div id="modal-04" class="reveal-modal" style="width:500px">
 
-		  <object width="500" height="350"><param name="movie" value="http://www.youtube.com/v/nWY-6xBA0Pk" />
-		<embed src="http://www.youtube.com/v/nWY-6xBA0Pk"
+		  <object width="500" height="350"><param name="movie" value="http://www.youtube.com/v/WsqW9rgNU90" />
+		<embed src="http://www.youtube.com/v/WsqW9rgNU90"
 			type="application/x-shockwave-flash" width="500" height="350" />
 				</object>
 
 		   <div class="description-box">
-			   <h4>Christianity</h4>
-			   <p>Jesus Christ is the only way for salvation.</p>
+			   <h4>UV Mime - Love Decoded'12</h4>
+			   <p>This is the UV mime performed by the Love Decoded team during the Christmas Program 2012.</p>
              <span class="categories"><i class="icon-star"></i>Jesus Saves</span>
 		   </div>
 
          <div class="link-box">
-            <a href="">LINKS TO MORE MATERIALS</a>
-		      <a class="close-reveal-modal">Close</a>
+            		      <a class="close-reveal-modal">Close</a>
          </div>
 
 	   </div> <!-- modal-04 End -->
@@ -352,19 +357,19 @@
       <!-- modal-05 -->
 	   <div id="modal-05" class="reveal-modal" style="width:500px">
 
-		   <object width="500" height="350"><param name="movie" value="http://www.youtube.com/v/nWY-6xBA0Pk" />
-		<embed src="http://www.youtube.com/v/nWY-6xBA0Pk"
+		   <object width="500" height="350"><param name="movie" value="http://www.youtube.com/v/2EtWqs7yOzo" />
+		<embed src="http://www.youtube.com/v/2EtWqs7yOzo"
 			type="application/x-shockwave-flash" width="500" height="350" />
 				</object>
 
 		   <div class="description-box">
-			   <h4>Christianity</h4>
-			   <p>Jesus Christ is the only way for salvation.</p>
+			   <h4>Set me free - Love Decoded'12</h4>
+			   <p>The SET ME FREE skit played by the Love Decoded Team during the Christmas program 2012</p>
              <span class="categories"><i class="icon-star"></i>Jesus Saves</span>
 		   </div>
 
          <div class="link-box">
-            <a href="">LINKS TO MORE MATERIALS</a>
+            
 		      <a class="close-reveal-modal">Close</a>
          </div>
 
