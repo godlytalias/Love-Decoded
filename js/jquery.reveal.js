@@ -33,7 +33,7 @@
         var defaults = {  
 	    	animation: 'fadeAndPop', //fade, fadeAndPop, none
 		    animationspeed: 300, //how fast animtions are
-		    closeonbackgroundclick: true, //if you click background will modal close?
+		    closeonbackgroundclick: false, //if you click background will modal close?
 		    dismissmodalclass: 'close-reveal-modal' //the class of a button or element that will close an open modal
     	}; 
     	
@@ -140,7 +140,7 @@
 				});
 			}
 			$('body').keyup(function(e) {
-        		if(e.which===27){ modal.trigger('reveal:close'); } // 27 is the keycode for the Escape key
+        		if(e.which===27){ $(window).scrollTop($(window).scrollTop()+10); } // 27 is the keycode for the Escape key
 			});
 			
 			

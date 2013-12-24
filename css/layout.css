@@ -1,3 +1,5 @@
+sup {font-size:xx-small; vertical-align:super;}
+
 /*==============*/
 /*gallery
 
@@ -152,7 +154,7 @@ properly.
 /* ================================================================== */
 
 header {
-   height: 54px;
+   height: 56px;
    width: 100%;
    z-index: 99999;
    background: url(../images/k-opacity-70.png);
@@ -169,7 +171,7 @@ header.static {
 /* header logo */
 header .logo {
    position: relative;
-   height: 54px;
+   height: 44px;
    width: 150px;
    float: left;
 }
@@ -215,7 +217,7 @@ ul#nav {
 ul#nav li {
 	position: relative;
 	list-style: none;
-   height: 54px;
+   height: 56px;
 
    display: inline-block;
 }
@@ -228,7 +230,7 @@ ul#nav > li.active a {
 ul#nav li a {
    display: block;
    padding: 0 14px;
-   line-height: 54px;
+   line-height: 56px;
 	text-decoration: none;
    text-align: left;
    color: #fff;
@@ -243,11 +245,11 @@ ul#nav li a {
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li:hover > a,
 ul#nav li.active a { color: #11ABB0;
--webkit-transform: scale(1.1);
--moz-transform: scale(1.1);
--o-transform: scale(1.1);
--ms-transform: scale(1.1);
-transform: scale(1.1);}
+-webkit-transform: scale(1.15);
+-moz-transform: scale(1.15);
+-o-transform: scale(1.15);
+-ms-transform: scale(1.15);
+transform: scale(1.15);}
 
 
 /*=================================================================== */
@@ -295,8 +297,9 @@ transform: scale(1.1);}
 /* ================================================================== */
 
 #intro {
-   background: #f5f5f5 url(../images/patterns/grey.png);
+   background: #f5f5f5 url(../images/homebg.jpg);
    overflow: hidden;
+   position: static;
 }
 
 /* FlexSlider Intro Slider Styles */
@@ -382,7 +385,7 @@ transform: scale(1.1);}
 
 #qa {
    background: #f5f5f5 url(../images/patterns/servicesbg.png);
-   padding-top: 156px;
+   padding-top: 120px;
    padding-bottom: 120px;
    color: #4E565F;
 }
@@ -423,7 +426,7 @@ transform: scale(1.1);}
 
 #materials {
    background: #f5f5f5 url(../images/patterns/grey.png);
-   padding-top: 156px;
+   padding-top: 120px;
    padding-bottom: 120px;
 }
 #materials .section-head h2 { color: #0f9095; }
@@ -593,61 +596,6 @@ transform: scale(1.1);}
 #about .team-wrap .member-social li a:hover { color: #0f9095; }
 
 
-/* Testimonials
-/* ------------------------------------------------------------------ */
-.testimonials { margin-top: 30px }
-
-.testimonials .client-author {
-   position: relative;
-}
-.testimonials .client-author img {
-   height: 66px;
-   width: 66px;
-
-   -moz-border-radius: 100% 100% 100% 100%;
-	-webkit-border-radius: 100% 100% 100% 100%;
-	-khtml-border-radius: 100% 100% 100% 100%;
-	border-radius: 100% 100% 100% 100%;
-}
-.testimonials .client-author .name {
-   font: 14px/24px montserrat-bold, sans-serif;
-   color: #0f9095;
-
-   position: absolute;
-   top: 6px;
-   left: 80px;
-}
-.testimonials .client-author span {
-   font-family: opensans-regular, sans-serif;
-   line-height: 18px;
-   font-size: 13px;
-   color: #969696;
-   display: block;
-}
-.testimonials .client-cite {
-   font: 18px/36px opensans-light, sans-serif;
-}
-
-
-/* ================================================================== */
-
-/* h. Map
-
-/* ================================================================== */
-
-#map {
-   display: block;
-	height: 486px;
-   width: 100%;
-   background-color: #F6F4EF;
-}
-#map img { max-width:inherit !important; }
-#map .map-error {
-  text-align: center;
-  padding-top: 48px;
-  color: #C0B491;
-  font-size: 14px;
-}
 
 
 /* ================================================================== */
@@ -657,7 +605,7 @@ transform: scale(1.1);}
 /* ================================================================== */
 
 #contact {
-   background-color: #25292D;
+   background: #25292D url(../images/patterns/servicesbg.png);
    padding-top: 108px;
    padding-bottom: 120px;
    color: #707B89;
@@ -768,8 +716,8 @@ transform: scale(1.1);}
 /* ================================================================== */
 
 footer {
-   margin-top: 30px;
-   margin-bottom: 30px;
+   margin-top: 10px;
+   margin-bottom: 10px;
    color: #303030;
    font-size: 14px;
 }

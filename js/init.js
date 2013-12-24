@@ -1,3 +1,8 @@
+function song(){
+var clickSound = new Audio('silentnight.mp3');
+clickSound.play();
+setTimeout("song()",115000);
+}
 
 function toggleVideo(state,tag) {
     var div = document.getElementById(tag);

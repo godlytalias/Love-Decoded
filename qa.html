@@ -10,6 +10,8 @@
 	<title>Love Decoded</title>
 	<meta name="description" content="Christmas Program NITC">
 	<meta name="author" content="Love Decoded Team">
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script> 
+<script src="js/jquery.reveal.js"></script>
 
    <!-- Mobile Specific Metas
   ================================================== -->
@@ -27,10 +29,28 @@
    <!-- Favicons
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.ico" >
+<style>
+#dvLoading
+	{
+	   background:#fff url(images/loading.gif) no-repeat center center;
+	   height:100%;
+	   width:100%;
+	   position: fixed;
+	   z-index: 1000;
+   	   margin: 0;
+}
+</style>
+
+<script>
+	$(window).load(function(){
+	  $('#dvLoading').fadeOut(2000);
+	});
+	</script>
 
 </head>
 
-<body data-spy="scroll" data-target="#nav-wrap">
+<body>
+<div id="dvLoading"></div>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -52,7 +72,7 @@
          <div class="col full">
 
             <div class="logo">
-               <a href="#"><img alt="" src="images/logo.png"></a>
+               <a href="http://www.lovedecoded.org"><img alt="Love Decoded" src="images/logo.png"></a>
             </div>
 
 
@@ -78,10 +98,9 @@
       </div>
 
    </header> <!-- Header End -->
+
+<!--SECTION -->
    
-   
-   <!-- About Section
-   ================================================== -->
   <section id="qa">
 
       <div class="row section-head">
@@ -99,51 +118,285 @@
 
          <div class="qa-wrapper">
 
-            <div class="col">
-               <h2><i class="icon-star"></i>TRINITY</h2>
-               <ul style="list-style-type:disc"><li><a href="javascript:;" onclick="window.open('http://carm.org/questions/about-doctrine/what-trinity', 'What is trinity?', 'width=800,height=800,resizable=1,scrollbars=1');">What is trinity?</a></li><li>
-<a href="javascript:;" onclick="window.open('http://carm.org/questions/about-doctrine/isnt-trinity-really-teaching-there-are-three-gods', 'Does trinity teach that there are three gods?', 'width=800,height=800,resizable=1,scrollbars=1');">Does trinity teach that there are three gods?</a></li></ul>
-
-            </div>
-
+<div class="col">
+               <h2><i class="icon-star"></i>God - the creator</h2>
+               <ul style="list-style-type:disc">
+<li><a href="#" data-reveal-id="whocreatedgod">Who created God?!!</a></li>
+<li><a href="#" data-reveal-id="salvation">How to reach God? Are there many ways?</a></li>
+</ul>
+</div>
+            
            <div class="col">
                <h2><i class="icon-star"></i>DIVINITY OF JESUS</h2>
 	<ul style="list-style-type:disc">
-<li><a href="javascript:;" onclick="window.open('http://www.alwaysbeready.com/jesus-christ?id=94', 'Why Christians believe that Jesus is God?', 'width=800,height=800,resizable=1,scrollbars=1');">Why Christians believe that Jesus is God?</a></li>
-<li><a href="javascript:;" onclick="window.open('http://www.4truth.net/fourtruthpbjesus.aspx?pageid=8589952895', 'Did Jesus really exist?', 'width=800,height=800,resizable=1,scrollbars=1');">Did Jesus really exist?</a></li>
-<li><a href="javascript:;" onclick="window.open('http://www.gotquestions.org/is-Jesus-God.html', 'Is Jesus God? Did Jesus ever claim to be God?', 'width=800,height=800,resizable=1,scrollbars=1');">Is Jesus God? Did Jesus ever claim to be God?</a></li>
-               <li><a href="javascript:;" onclick="window.open('http://www.gotquestions.org/divinity-of-Christ.html', 'Biblical arguments about the trinity of Jesus', 'width=800,height=800,resizable=1,scrollbars=1');"">Biblical arguments about the trinity of Jesus</a></li></ul>
+<li><a href="#" data-reveal-id="jesusisgod">Is Jesus really God? Did He ever claim it?</a></li>
+<li><a href="#" data-reveal-id="jesusexist">Jesus - a mythical figure or not?</a></li>
+</ul>
             </div>
 
             <div class="col m-first">
                <h2><i class="icon-star"></i>Death & Suffering</h2>
-               <ul style="list-style-type:disc"><li><a href="javascript:;" onclick="window.open('http://www.answersingenesis.org/articles/nab/why-does-creation-include-suffering', 'Why creation include death & suffering?', 'width=800,height=800,resizable=1,scrollbars=1');">Why God's creation include death & suffering?</a></li>
-<li><a href="javascript:;" onclick="window.open('http://www.gotquestions.org/is-God-cruel.html', 'Is God cruel?', 'width=800,height=800,resizable=1,scrollbars=1');">Is God cruel?</a></li>
+               <ul style="list-style-type:disc">
+<li><a href="#" data-reveal-id="deathnsuffering">Why bad things, even to good people?</a></li>
+<li><a href="#" data-reveal-id="isgodcruel">How can a Loving God be cruel?</a></li>
 </ul>
             </div>
 
             <div class="col first">
                <h2><i class="icon-star"></i>Christianity Vs. Science</h2>
-               <ul style="list-style-type:disc"><li><a href="javascript:;" onclick="window.open('http://carm.org/is-christianity-anti-science', 'Is Christianity against Science?', 'width=800,height=800,resizable=1,scrollbars=1');">Is Christianity against Science?</a></li></ul>
+               <ul style="list-style-type:disc">
+<li><a href="#" data-reveal-id="christianityandscience">Does Christianity contradict Science?</a></li>
+<li><a href="#" data-reveal-id="istheregod">Is there a God? Does Science answer this question?</a></li></ul>
+            </div>
+
+<div class="col">
+               <h2><i class="icon-star"></i>TRINITY</h2>
+               <ul style="list-style-type:disc"><li><a href="#" data-reveal-id="whatistrinity">Trinity?! What is this?</a></li><li>
+<a href="#" data-reveal-id="threegods">Does it then mean that there are three Gods?</a></li></ul>
+
             </div>
 
             <div class="col m-first">
                <h2><i class=" icon-star"></i>Authenticity of Bible</h2>
-               <ul style="list-style-type:disc"><li><a href="javascript:;" onclick="window.open('http://carm.org/is-the-bible-true', 'Is The Bible true?', 'width=800,height=800,resizable=1,scrollbars=1');">Is The Bible true?</a></li>
-<li><a href="javascript:;" onclick="window.open('http://www.alwaysbeready.com/bible-evidence?id=99', 'Can we trust the Bible?', 'width=800,height=800,resizable=1,scrollbars=1');">Can we trust the Bible?</a></li>
+               <ul style="list-style-type:disc">
+<li><a href="#" data-reveal-id="isbibletrue">Who said the Bible is true?</a></li>
+<li><a href="#" data-reveal-id="trustbible">How can I trust the Bible? Is it reliable?</a></li>
 </ul>
             </div>
 
-            <div class="col">
-               <h2><i class="icon-star"></i>Sin & Salvation</h2>
-               <ul style="list-style-type:disc"><li><a href="javascript:;" onclick="window.open('http://www.reasonablefaith.org/how-can-christ-be-the-only-way-to-god', 'Is Christ the only way of salvation?', 'width=800,height=800,resizable=1,scrollbars=1');">Is Christ the only way of salvation?</a></li></ul>
-            </div>
+	  
 
          </div> <!-- Services-Wrapper End -->
 
       </div> <!--end row -->
 
-   </section> <!-- Services Section End -->
+
+
+
+<!-- POPUPS -->
+
+<div id="whatistrinity" class="reveal-modal">
+		
+		  <div class="description-box">
+			   <h4>Trinity</h4>
+			   <p>&nbsp;The word "trinity" is a term used to describe the Christian doctrine which states that God exists as a unity of three distinct persons: Father, Son, and Holy Spirit.  Each of the persons is distinct from the other, yet identical in essence.  In other words, Each of them are fully divine in nature, but not the totality of the other persons of the Trinity. Even though there are three different persons in the trinity, yet they are not three gods, but one God.  They are three individual subsistences, or persons.</p>
+<h4>&nbsp;Verses about trinity</h4>
+	<p><b> Matt. 28:19</b> Go therefore and make disciples of all the nations, baptizing them in the name of the Father and the Son and the Holy Spirit<br/>
+ <b>1 Cor. 12:4-6</b> Now there are varieties of gifts, but the same Spirit. And there are varieties of ministries, and the same Lord. And there are varieties of effects, but the same God who works all things in all persons.<br/>
+ <b> 2 Cor. 13:14</b> The grace of the Lord Jesus Christ, and the love of God, and the fellowship of the Holy Spirit, be with you all.</br>
+ <b>Eph. 4:4-7</b> There is one body and one Spirit, just as also you were called in one hope of your calling; One Lord, one faith, one baptism, one God and Father of all who is over all and through all and in all. But to each one of us grace was given according to the measure of Christ’s gift.<br/>
+ <b>1 Pet. 1:2</b> "according to the foreknowledge of God the Father, by the sanctifying work of the Spirit, that you may obey Jesus Christ and be sprinkled with His blood: May grace and peace be yours in fullest measure."</br>
+ <b>Jude 1:20-21</b> "But you, beloved, building yourselves up on your most holy faith; praying in the Holy Spirit; keep yourselves in the love of God, waiting anxiously for the mercy of our Lord Jesus Christ to eternal life."</br>
+</p>
+            <span class="categories"><i class="icon-star"></i>Love Decoded</span>
+		   </div>
+
+         <div class="link-box">
+	    <a href="javascript:;" onclick="window.open('http://carm.org/trinity', 'Why Christians believe that Jesus is God?', 'width=800,height=800,resizable=1,scrollbars=1');">Read More</a>
+            <a href="#" class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div>
+
+
+
+<div id="threegods" class="reveal-modal">
+		   <div class="description-box">
+			   <h4>Real meaning of trinity</h4>
+			   <p>&nbsp;By definition the doctrine of Trinity teaches that there is only one God.  Nevertheless, there are those who assert that the Trinity really teaches the concept of three separate gods. They claim it is either impossible for God to exist in three persons and/or that the Trinity is really borrowed from pagan three-god figures.  Many add that a person is by necessity an individual being. Trinitarianism denies and opposes the idea that there is more than one God.  It is by definition, monotheistic.</p>
+<p>Trinities are known and accepted by people as observed in nature.  By analogy we see that creation itself is Trinitarian. Time is past, present, and future. There are not three times. Each part of the whole of time is by nature time yet there are not three times but one.  Likewise, space is height, width, and depth.  Matter is solid, liquid, and gas.  The Bible says that God's invisible attributes are made known in creation <i>(Romans 1:20)</i></p>
+            <span class="categories"><i class="icon-star"></i>Love Decoded</span>
+		   </div>
+
+         <div class="link-box">
+	    <a href="javascript:;" onclick="window.open('http://carm.org/questions/about-doctrine/isnt-trinity-really-teaching-there-are-three-gods', 'Does trinity teach that there are three gods?', 'width=800,height=800,resizable=1,scrollbars=1');">Read More</a>
+            <a href="#" class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div>
+
+<div id="jesusisgod" class="reveal-modal">
+		   <div class="description-box">
+			   <h4>Divinity of Jesus</h4>
+			   <p>&nbsp;The teachings of Jesus was so authoritative and His life was so miraculous, that just by observing His life we can validate His divinity. History says that the birth of Jesus was a virgin birth and He resurrected on the third day after His death. No man can do such miracles. Jesus never said the exact three words "I am God" during His ministerial life, but we don't need those exact words to determine that Jesus is God in flesh. There are many verses that imply the same:</p>
+<p>
+    <b>John 1:1,14</b> “In the beginning was the Word, and the Word was with God, and the Word was God, And the Word became flesh, and dwelt among us, and we beheld His glory, glory as of the only begotten from the Father, full of grace and truth.”
+    <br/><b>John 5:18</b> "For this cause therefore the Jews were seeking all the more to kill Him, because He not only was breaking the Sabbath, but also was calling God His own Father, making Himself equal with God."
+    <br/><b>John 8:24</b> "I said therefore to you, that you shall die in your sins; for unless you believe that I am He, you shall die in your sins."
+    <br/><b>John 8:58 </b>, “Jesus said to them, “Truly, truly, I say to you, before Abraham was born, I am.”
+    <br/><b>John 20:28</b>, “Thomas answered and said to Him, ‘My Lord and my God!’"
+    <br/><b>Col. 2:9</b>, “For in Him all the fulness of Deity dwells in bodily form.”
+   <br/><b> Phil. 2:5-8 </b>, “Have this attitude in yourselves which was also in Christ Jesus, who, although He existed in the form of God, did not regard equality with God a thing to be grasped, but emptied Himself, taking the form of a bond-servant, and being made in the likeness of men. And being found in appearance as a man, He humbled Himself by becoming obedient to the point of death, even death on a cross.”
+    <br/><b>Heb. 1:8</b>, “But of the Son He says, “Thy throne, O God, is forever and ever, and the righteous scepter is the scepter of His kingdom.”
+     <br/><b>Rev. 21:3</b>, “Behold, the dwelling place of God is with man. He will dwell with them, and they will be his people, and God himself will be with them as their God.
+</p>
+            <span class="categories"><i class="icon-star"></i>Jesus - The Reason for the season</span>
+		   </div>
+
+         <div class="link-box">
+	    <a href="javascript:;" onclick="window.open('http://www.alwaysbeready.com/jesus-christ?id=94', 'Why Christians believe that Jesus is God?', 'width=800,height=800,resizable=1,scrollbars=1');">Read More</a>
+            <a href="#" class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div>
+
+
+<div id="jesusexist" class="reveal-modal">
+		   <div class="description-box">
+			   <h4>Did Jesus really exist?</h4>
+			   <p>&nbsp;<i>"No, he didn't!"</i> some skeptics claim, thinking that this is a quick, powerful lever with which to pry people away from "the fable of Christianity". But the lever crumbles at its very first use. In fact, there is more evidence that Jesus of Nazareth certainly lived than many famous figures of the ancient past. There are so many powerful evidences in history that Jesus lived on earth about 2000 years ago.</p>
+<p>Cornelius Tacitus, one of the most reliable source historians of first-century Rome, wrote in his Annals a year-by-year account of events in the Roman Empire under the early Caesars. Careful historian that he was, Tacitus then explains who "the Christians" were: "Christus, the founder of the name, had undergone the death penalty in the reign of Tiberius, by sentence of the procurator Pontius Pilatus" (15:44). Gaius Suetonius Tranquillus, Pliny the Younger was the Roman governor of Bithynia and other ancient sources such as Theudas and Mara bar Serapion also bear witness to the historicity of Jesus. But any further evidence clearly comes under the "beating a dead horse" category so far as this article is concerned. Nothing more is necessary in view of the overpowering evidence that Jesus of Nazareth was no myth, but a totally historical figure who truly lived.</p>
+            <span class="categories"><i class="icon-star"></i>Jesus Saves</span>
+		   </div>
+
+         <div class="link-box">
+	    <a href="javascript:;" onclick="window.open('http://www.4truth.net/fourtruthpbjesus.aspx?pageid=8589952895', 'Did Jesus really exist?', 'width=800,height=800,resizable=1,scrollbars=1');">Read More</a>
+            <a href="#" class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div>
+
+<div id="deathnsuffering" class="reveal-modal">
+		   <div class="description-box">
+			   <h4>Why Death & Suffering??</h4>
+			   <p>&nbsp;Why do bad things happen? Through the ages, human beings have sought to reconcile their understanding of an all-powerful, loving God with the seemingly endless suffering around them. God’s creation was perfect without blemish, defect, disease, suffering, or death. The theory of “survival of the fittest” itself was not valid. Animals did not prey on each other, and the first two humans, Adam and Eve, did not kill animals for food. The original creation was a beautiful place, full of life and joy in the presence of the Creator.</p>
+<p>&nbsp;God placed Adam and Eve in a perfect paradise. As their Creator, He had authority over them. In His authority, God gave Adam a rule: “But of the tree of the knowledge of good and evil you shall not eat, for in the day that you eat of it you shall surely die” <i>(Genesis 2:17).</i> One day the devil tempted Eve to eat the fruit God had forbidden. Both Adam and Eve ate it. Their actions resulted in the punishment that God had warned them about. God is holy and cannot tolerate sin in His presence. The just Creator righteously kept His promise that punishment would follow their disobedience. With the rebellious actions of one man, death entered God’s creation.</p>
+<p>&nbsp;After Adam and Eve sinned and were banished from the Garden of Eden <i>(Genesis 3:20–24)</i>. Their children inherited Adam’s sinful nature, and each child rebelled against his or her Creator. Every human is a descendant of Adam and Eve, born with the same problem: a sinful nature. When Adam sinned, the Lord cursed the universe. In essence there was a change, and along with that change God began to uphold the creation in a cursed state. Suffering and death entered into His creation. The whole universe now suffers from the effects of sin <i>(Romans 8:22)</i>.</p>
+<p>&nbsp;Those who have received the free gift of eternal life through accepting Jesus as the Lord in their life can look forward to spending eternity with Him in a perfect, pain-free place <i>(Revelation 21:4)</i>.</p>
+            <span class="categories"><i class="icon-star"></i>God is love</span>
+		   </div>
+
+         <div class="link-box">
+	    <a href="javascript:;" onclick="window.open('http://godandscience.org/apologetics/natural_evil_theodicity.html', 'Why creation include death & suffering?', 'width=800,height=800,resizable=1,scrollbars=1');">Read More</a>
+            <a href="#" class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div>
+
+
+<div id="isgodcruel" class="reveal-modal">
+		   <div class="description-box">
+			   <h4>Is God cruel?</h4>
+			   <p>&nbsp;There are atheists and agnostics who argue that the God who is presented in the Bible is cruel.
+There is no doubt that God both allows and, at times, causes pain and suffering, but God’s goodness cannot be impugned because He commits an act that appears cruel to us. While we can’t claim to know His reasoning in every circumstance, we do know several reasons for actions that can appear to us as cruel, especially if we don’t know or don’t bother to find out the circumstances. God is the Holy one and also just. He can't make compromises with sins and unjust ways of man. He will punish man for their wrong doings. Sometimes we may feel that certain incidents which occur in our life are bad, but it could also be for our good in the future.
+ </p>
+            <span class="categories"><i class="icon-star"></i>God is love</span>
+		   </div>
+
+         <div class="link-box">
+	    <a href=href="javascript:;" onclick="window.open('http://www.gotquestions.org/is-God-cruel.html', 'Is God cruel?', 'width=800,height=800,resizable=1,scrollbars=1');">Read More</a>
+            <a href="#" class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div>
+
+
+<div id="christianityandscience" class="reveal-modal">
+		   <div class="description-box">
+			   <h4>Christianity & Science</h4>
+			   <p>&nbsp;Christianity is not against science.  But, before we get into this further, let's define what science is. "Science is that branch of study which seeks to observe, discover, and understand the nature and principles that govern our universe, our world, and ourselves. The result of this process is a systematic categorization of knowledge with the goal of predicting and manipulating events according to discovered natural laws."<br/>
+&nbsp;Still, the most rational scientists, even those who refuse to believe in God, admit to a lack of completeness in our understanding of the universe. They will admit that neither God nor the Bible can be proved or disproved by science, just as many of their favorite theories ultimately cannot be proved or disproved. Science is meant to be a truly neutral discipline, seeking only the truth, not furtherance of an agenda.</p>
+<p>&nbsp;
+The Bible gives us foundational principles upon which scientific thought can be justified.  It teaches us that the universe had a definite beginning <i>(Genesis 1:1)</i>, which means time is finite in the past, that motion had a beginning (laws of physics), and that the universe is ordered <i>(Genesis 1:3-31)</i>.  It tells us that the universe is running down, i.e., entropy <i>(Psalm 102:25-26)</i>, that the earth is suspended in nothing <i>(Job 26:7)</i>, and also the stars are innumerable <i>(Genesis 15:5)</i> etc.
+</p>
+<p>&nbsp;Science is a method that mankind can use to gain a greater understanding of the natural universe. It is a search for knowledge through observation. You will not get forgiveness of your sins nor salvation of your soul and peace through science. You can get it only in Christ.</p>
+            <span class="categories"><i class="icon-star"></i>Love Decoded</span>
+		   </div>
+
+         <div class="link-box">
+	    <a href="javascript:;" onclick="window.open('http://godandscience.org/apologetics/sciencebible.html', 'Is Christianity against Science?', 'width=800,height=800,resizable=1,scrollbars=1');">Read More</a>
+            <a href="#" class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div>
+
+
+<div id="istheregod" class="reveal-modal">
+		   <div class="description-box">
+			   <h4>Is there a God!</h4>
+			   <p>&nbsp;Most skeptics take pride in their intellectual ability and like to think that they have no "beliefs." However, modern science has shown us that everyone has beliefs, since this is how our brains work. A good introduction to this field can be found in Andrew Newberg's book, Why We Believe What We Believe: Uncovering Our Biological Need for Meaning, Spirituality, and Truth. Before we can get started, we need to agree on some principles that govern (or should govern) a skeptical worldview. The first and foremost principle is that all beliefs should be based upon observational evidence. The second principle is that skeptics must be logically consistent at all times. In other words, a skeptic may not believe something to be true if it is contradicted by observational evidence. </p>
+<p>&nbsp;Before the 20th century, atheists assumed that the universe was eternal. However, beginning with Einstein's theory of general relativity, and early observational evidence, it became apparent that the universe was expanding. Extrapolating back in time revealed that the universe was merely billions of years old. The data eventually led to the "Big Bang" theory, which is virtually universally accepted by modern day cosmologist. Attempts to get around the idea that the universe had a beginning have all met with observational difficulties. The idea that the universe could have gone through an infinite number of births and deaths (the oscillating universe theory) was shown to be false on the basis of the lack of amount of matter within the universe, and the fact that any collapse would have led to a "Big Crunch" instead of another Big Bang. So, we have come to realize that the universe first began to exist 13.8 billion years ago. Atheists are left with a dilemma, since their worldview requires that all things that begin to exist must have a cause. So, logic requires the admission that the universe had a cause.The physical laws of the universe fall within very narrow ranges in order for life (or even matter) to exist, suggesting some level of design. The observational evidences lean towards the existence of God. The best evidence for design can be seen in the nature of the universe and how it came to be. The process of discovery continues, since one of the fundamental properties of the universe, dark energy (or the cosmological constant), was discovered late in the last century. </p>
+<p>"Unlikely things happen all the time." This is the mantra of the anti-design movement. However, there is an absolute physical limit for improbable events to happen in our universe. The universe contains only 10<sup>80</sup> baryons and has only been around for 13.8 billion years (10<sup>18</sup> sec). Since the smallest unit of time is Planck time (10<sup>45</sup> sec), the lowest probability event that can ever happen in the history of the universe is:<br/>
+1/10<sup>80</sup> x 1/10<sup>18</sup> x 1/10<sup>45</sup> =1/10<sup>143</sup><br/>
+&nbsp;So, although it would be possible that one or two constants might require unusual fine-tuning by chance, it would be virtually impossible that all of them would require such fine-tuning. An unbiased study on the scientific resources clearly indicates the need of a designer behind the creation of the universe.</p>
+            <span class="categories"><i class="icon-star"></i>Love Decoded</span>
+		   </div>
+
+         <div class="link-box">
+	    <a href="javascript:;" onclick="window.open('http://godandscience.org/evolution/index.html', 'Is there God?', 'width=800,height=800,resizable=1,scrollbars=1');">Read More</a>
+            <a href="#" class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div>
+
+
+
+<div id="isbibletrue" class="reveal-modal">
+		   <div class="description-box">
+			   <h4>Is the Bible true?</h4>
+			   <p>&nbsp;When we ask if the Bible is true, we must ask in what sense is it true. Is it true as a historical document? Is it true in regard to its wisdom? Is it true in its claim to be inspired by God? Is it true regarding the person of Jesus, his claims, and his miracles? So, when we're looking at the Bible and asking if it's true, we are inquiring about the validity of statements about the Bible in regard to actuality, logic, morality, etc.  Furthermore, the answers to the questions are largely dependent on what you believe to begin with. If you are an atheist, then the Bible as a whole cannot be true because your preassumptions do not allow it.</p>
+<p>&nbsp;The Bible had been proved true by the Archaeological evidences, Historicity of Jesus, Scientific evidences, its uniqueness and unity, and prophetic evidences.  The Bible was written by over 40 authors who came from just about every walk of life conceivable, including fisherman, kings, priests, and a tax collector. The 66 books of the Bible were written over a 1,500 year span in three languages on three continents with one theme and no contradictions. The Bible is literally filled with detailed prophecies that have been fulfilled with 100% accuracy. The Bible had prophecied about the invention of vehicles, television, destruction of ancient tyre, fall of Babylon, dramatic rebirth of the nation of Israel, Rise and fall of the four kingdoms (Babylon, Medo - Persia, Greece, Roman), Rise and division of the kingdom of Alexander the great, Return of Jews to Jerusalem, Immorality among people and disasters like Tsunamis. The Bible made the prophecies thousands of years ago and history testifies that all those prophecies are fulfilled.</p>
+<p>&nbsp;Science had changed its statements many times based on different researches. But there wasn't any need for a correction in Bible. Bible, The book of Job written in BC 1491 said that Earth floats in space and hangs over nothing and also it is spherical. During those times people believed that Earth is flat and it is supported by giant mammoths under it. Later only it was discovered that the statement of Bible is true. Lots of people tried to destroy Bible completely from earth but the Bible still remains as the book printed in most number of languages in the world.</p>
+            <span class="categories"><i class="icon-star"></i>Jesus is the same yesterday, today and forever</span>
+		   </div>
+
+         <div class="link-box">
+	    <a href="javascript:;" onclick="window.open('http://godandscience.org/apologetics/bibletru.html', 'Is The Bible true?', 'width=800,height=800,resizable=1,scrollbars=1');">Read More</a>
+            <a href="#" class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div>
+
+<div id="trustbible" class="reveal-modal">
+		   <div class="description-box">
+			   <h4>Can I trust Bible?</h4>
+			   <p>&nbsp;Many skeptics believe that the Bible has been drastically changed over the centuries. In reality, the Bible has been translated into a number of different languages. However, the ancient manuscripts (written in Hebrew, Aramaic, and Greek) have been reliably copied over the centuries - with very few alterations. </p>
+<p>&nbsp;How do we know the Bible has been kept in tact for over 2,000 years of copying? Before the discovery of the Dead Sea Scrolls, our earliest Hebrew copy of the Old Testament was the Masoretic text, dating around 800 A.D. The Dead Sea Scrolls date to the time of Jesus and were copied by the Qumran community, a Jewish sect living around the Dead Sea. We also have the Septuagint which is a Greek translation of the Old Testament dating in the second century B.C. When we compare these texts which have an 800-1000 years gap between them we are amazed that 95% of the texts are identical with only minor variations and a few discrepancies.</p>
+<p>&nbsp;There are tens of thousands of manuscripts from the New Testament, in part or in whole, dating from the second century A.D. to the late fifteenth century, when the printing press was invented. These manuscripts have been found in Egypt, Palestine, Syria, Turkey, Greece, and Italy, making collusion unlikely. The oldest manuscript, the John Rylands manuscript, has been dated to 125 A.D. and was found in Egypt, some distance from where the New Testament was originally composed in Asia Minor. Many early Christian papyri, discovered in 1935, have been dated to 150 A.D., and include the four gospels. Thousands of early Christian writings and lexionaries (first and second century) cite verses from the New Testament. In fact, it is nearly possible to put together the entire New Testament just from early Christian writings. With all of the massive manuscript evidence you would think there would be massive discrepancies - just the opposite is true. New Testament manuscripts agree in 99.5% of the text (compared to only 95% for the Iliad). Most of the discrepancies are in spelling and word order.</p>
+<p>&nbsp;The Bible is so exceedingly accurate in its transmission from the originals to the present copies, that if you compare it to any other ancient writing, the Bible is light years ahead in terms of number of manuscripts and accuracy.  If the Bible were to be discredited as being unreliable, then it would be necessary to discard the writings of Homer, Plato, and Aristotle as also unreliable since they are far far less well preserved than the Bible.The Bible was written by those who were inspired by God, so it is accurate and true, and represents historical occurrences.  When we look at the New Testament we realize that it was written by those who either knew Jesus personally, or were under the direction of those who did.  They wrote what they saw.  They wrote about the resurrection of Christ.  They recorded His miracles and His sayings.  It comes down to whether or not you believe what it says about Christ.</p>
+            <span class="categories"><i class="icon-star"></i>Jesus is the same yesterday, today and forever</span>
+		   </div>
+
+         <div class="link-box">
+	    <a href="javascript:;" onclick="window.open('http://www.alwaysbeready.com/bible-evidence?id=99', 'Can we trust the Bible?', 'width=800,height=800,resizable=1,scrollbars=1');">Read More</a>
+            <a href="#" class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div>
+
+<div id="whocreatedgod" class="reveal-modal">
+		   <div class="description-box">
+			   <h4>How was God created?</h4>
+			   <p>&nbsp;Who created God? It is an age-old question that has plagued all those who think about the big questions. Christianity claims that God has always existed. Is this idea even possible? Does science address such issues? </p>
+<p>&nbsp;Christianity answers the question of who made God in the very first verse of the very first book, Genesis : In the beginning, God created the heavens and the earth <i>(Genesis 1:1)</i>. This verse tells us that God was acting before time when He created the universe. Many other verses from the New Testament tell us that God was acting before time began, and so, He created time, along with the other dimensions of our universe <i>(1 Corinthians 2:7)</i>. Plato had also quoted his idea that time was created with heavens. He wrote that 'Time, accordingly, was created along with the heavens; in order that, coming into being together, they might also be together dissolved, if ever their dissolution should take place.'
+<p>&nbsp;Since we live in a universe of cause and effect, we naturally assume that this is the only way in which any kind of existence can function. However, the premise is false. Without the dimension of time, there is no cause and effect, and all things that could exist in such a realm would have no need of being caused, but would have always existed. Therefore, God has no need of being created, but, in fact, created the time dimension of our universe specifically for a reason - so that cause and effect would exist for us. However, since God created time, cause and effect would never apply to His existence.</p>
+
+            <span class="categories"><i class="icon-star"></i>Jesus Loves You</span>
+		   </div>
+
+         <div class="link-box">
+	    <a href="javascript:;" onclick="window.open('http://godandscience.org/apologetics/who_created_god.html', 'Who created God?', 'width=800,height=800,resizable=1,scrollbars=1');">Read More</a>
+            <a href="#" class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div>
+
+<div id="salvation" class="reveal-modal">
+		   <div class="description-box">
+			   <h4>The only way!</h4>
+			   <p>&nbsp;It is a lie to believe that God doesn't care about small sins or that hell is reserved for "bad people." Any sin separates us from God, even a “little white lie.” Everyone has sinned, and no one is good enough to get to heaven on their own <i>(Romans 3:23)</i>. God is 100% holy and a man with sin can never reach God. We need to get forgiveness for our sins inorder to reach God. None of the good works we do can cover the sins that we have done. We may say that we are good people. But we need to be good in the eyes of God. God's standards are much higher than ours. The Word of God says that we become a murderer when we hate our brother and commit adultery when look at a woman with lust <i>(Matthew 5:21-30)</i>. There is no one who is righteous in this world, which is what the Bible says in Romans 3:10. No man can reach God through their own works. God can never make a compromise with sin. The punishment of sin set by God is eternal death, which is hell. God can't simply change His words, But He didn't want to loose the relationship with man. So He sent His only begotten son, Jesus to earth to become a sacrifice for the sins of mankind. Jesus bore on Himself the punishment we had to suffer, so that we can be saved. Anyone who believes in the sacrifice of Jesus confessing their sins and accepting Him as Lord will be forgiven. Jesus will cleanse those who accept Him and will make them holy. That is the only way through which we can reach God.</p>
+<p>&nbsp;Many people believe that all religions are basically the same, and one way to God is as good as another. All you have to do is practice one of them and it works. Those who believe in Jesus respectfully disagree, for several reasons. First, we disagree that all religions are basically the same. It would be clearer to say that all religions fit into two categories. One category offers a way to God that involves a system of rules and regulations. There are scores of these “effort-oriented” religions. All of these religions represent, at their core, a human-centered attempt to reach God or earn God’s acceptance. Christianity fits into a different category altogether and it is unique. Christianity claims to be God’s answer; God’s revelation. It is not human-centered but God-centered. In fact, Christianity may include a lot of features that people identify as religion, but at its core Christianity is about a relationship with God. That relationship is a God-given gift, not earned by effort or behavior.</p>
+            <span class="categories"><i class="icon-star"></i>Jesus is the same yesterday, today and forever</span>
+		   </div>
+
+         <div class="link-box">
+	    <a href="javascript:;" onclick="window.open('http://www.goodnewsaboutgod.com/studies/spiritual/home_study/only_way.htm', 'Is Christ the only way of salvation?', 'width=800,height=800,resizable=1,scrollbars=1');">Read More</a>
+            <a href="#" class="close-reveal-modal">Close</a>
+         </div>
+
+	   </div>
+
+   </section> 
 
  <!-- footer
    ================================================== -->
@@ -167,15 +420,6 @@
 
    </footer> <!-- Footer End-->
 
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/scrollspy.js"></script>
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/jquery.reveal.js"></script>
-   <script src="js/init.js"></script>
-   <script src="js/smoothscrolling.js"></script> 
-
-</body>
+   </body>
 
 </html>

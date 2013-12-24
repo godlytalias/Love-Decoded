@@ -28,9 +28,30 @@
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.ico" >
 
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+
+<style>
+#dvLoading
+	{
+	   background:#fff url(images/loading.gif) no-repeat center center;
+	   height:100%;
+	   width:100%;
+	   position: fixed;
+	   z-index: 1000;
+   	   margin: 0;
+}
+</style>
+
+<script>
+	$(window).load(function(){
+	  $('#dvLoading').fadeOut(2000);
+	});
+	</script>
+
 </head>
 
-<body data-spy="scroll" data-target="#nav-wrap">
+<body>
+<div id="dvLoading"></div>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -52,7 +73,7 @@
          <div class="col full">
 
             <div class="logo">
-               <a href="#"><img alt="" src="images/logo.png"></a>
+              <a href="http://www.lovedecoded.org"><img alt="Love Decoded" src="images/logo.png"></a>
             </div>
 
 
@@ -89,12 +110,14 @@
          <div class="col one-fourth">
             <h2>LOVE DECODED</h2>
             <p class="desc">Spreading the love of Christ.</p>
+	    <p class="desc"><img src="images/portfolio/logos.png"/></p>
          </div>
 
          <div class="col three-fourths">
 	     <h3>Our Visions</h3>
-             <p class="intro">Love Decoded team is a group of students from NIT Calicut.</p>
-	     <p style="text-align:justify"> The vision of the Love Decoded team is to reach out the needy ones in the society and also in the campus. We make frequent visits to orphanages & old age homes and provide the helps that we could do as students. We dream a world where everyone love others as they love themselves.</p>
+             <p class="desc">Love Decoded team is a group of students in NIT Calicut who want to spread the joy of life to others.</p>
+<p class="desc">&nbsp;Love Decoded wants to share that the real reason for joy in Christmas is Jesus Christ to the students and the general community in and around NIT Calicut. </p>
+	     <p style="text-align:justify">&nbsp;Our vision is to reach out to the needy ones in the campus and also in the society. We make frequent visits to orphanages & old age homes and provide whatever help that our little hands can do. We dream a world where everyone love others as they love themselves.</p>
          </div>
 
       </div>
@@ -107,28 +130,11 @@
 
          <div class="col full">
             <h4>Our Team</h4>
-	<p class="desc"> Love one another. As I have loved you ~ Jesus Christ</p>
+	<p class="desc">&nbsp;<i>Love one another as I have loved you ~ Jesus Christ</i></p>
 
-            <p style="text-align:justify"> We are a team having members from all the branches & years of NITC working together for the society without any barriers of language or culture. There are many ones around us those who are not having anyone to care them, to give them food or to love them as the love and care we are getting. The Love Decoded team is involved in spending time which such people and helping them. Anyone who are interested in the social activities can join the team.</p>
+            <p style="text-align:justify">&nbsp;We are a team having members from all branches, years & degrees of NITC working together for the society without any barrier of language or culture. There are many ones around us those who are not having anyone to care them, to give them food or to love them as the love and care we are getting. The Love Decoded team is involved in spending time which such people and helping them. Anyone who are interested in the social activities are welcome to join us.</p>
 			</div>
 
- <!--        <div class="col">
-            <h4>Orphanage Visits</h4>
-
-            <p>links to materials</p>
-			</div>
-
-         <div class="col m-first">
-            <h4>Are all men under sin?</h4>
-
-            <p>links to materials</p>
-			</div>
-
-         <div class="col">
-            <h4>Need for salvation</h4>
-
-            <p>links to materials</p>
-			</div> -->
 
       </div> <!-- Process Wrap End -->
 
@@ -160,14 +166,7 @@
 
    </footer> <!-- Footer End-->
 
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/scrollspy.js"></script>
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/jquery.reveal.js"></script>
-   <script src="js/init.js"></script>
-   <script src="js/smoothscrolling.js"></script> 
 
 </body>
 
