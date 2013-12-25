@@ -1,11 +1,11 @@
 .roundabout-holder  { 
 	width:850px;
-	height:496px;
+	height:488px;
 	margin:0 auto;
 }
 .roundabout-moveable-item {
    width: 646px;
-   height: 490px;
+   height: 488px;
    cursor: pointer;
 	 border:3px solid #000000;
 	 border:3px solid rgba(0, 0, 0, 0.5);
