@@ -7,8 +7,8 @@ sup {font-size:xx-small; vertical-align:super;}
 #gallery {
    background: #f5f5f5 url(../images/patterns/bgpattern.jpg);
    background-attachment: fixed;
-   padding-top: 100px;
-   padding-bottom: 120px;
+   padding-top: 110px;
+   padding-bottom: 155px;
    color: #4E565F;
 }
 
@@ -172,45 +172,6 @@ ul#nav li.active a { color:#ff0000 ; /*#11ABB0*/
 transform: scale(1.15);}
 
 
-/*=================================================================== */
-/* home 
-/*=================================================================== */
-#home {
-   background: #1b1e21;
-   padding-top: 156px;
-   padding-bottom: 120px;
-   color: #4E565F;
-   background-attachment: fixed;
-}
-
-#home a, #home a:visited  { color: #C4C4C4; }
-#home a:hover, #home a:focus { color: #11ABB0; }
-
-#home .section-head h2 { color: #11ABB0; }
-#home .section-head p.desc,
-#home .section-head .intro { color: #57606B; }
-
-.home-wrapper { margin-top: 42px; }
-.home-wrapper .col {
-   width: 33.33333%;
-   margin-bottom: 30px;
-}
-.home-wrapper h2 {
-   font: 16px/24px montserrat-bold, sans-serif;
-   letter-spacing: 1.5px;
-   text-transform: uppercase;
-   color: #C4C4C4;
-   margin-bottom: 18px;
-}
-.home-wrapper p {
-   font-size: 16px;
-   line-height: 30px;
-}
-#home .home-wrapper i { margin-right: 10px; }
-
-
-
-
 /* ================================================================== */
 
 /* c. Intro Section
@@ -218,7 +179,7 @@ transform: scale(1.15);}
 /* ================================================================== */
 
 #intro {
-   background: #111 url(../images/homebg.jpg) no-repeat center center fixed;;
+   background: #111 url(../images/homebg.jpg) no-repeat center center;
    background-attachment: fixed;   
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
@@ -226,6 +187,8 @@ transform: scale(1.15);}
     background-size: cover;         /* Generic*/
    overflow: hidden;
    position: static;
+   padding-top: 30px;
+   padding-bottom: 266px;
 }
 
 /* FlexSlider Intro Slider Styles */
@@ -237,7 +200,7 @@ transform: scale(1.15);}
 	color: #737E8C;
    text-align: center;
    width: 85%;
-   margin: 66px auto 66px auto;
+   margin: 0px auto 0px auto;
 }
 .slider-text h2 {
    font: 56px/78px montserrat-regular, Sans-serif;
@@ -357,8 +320,8 @@ transform: scale(1.15);}
 
 #materials {
    background: #f5f5f5 url(../images/patterns/grey.png);
-   padding-top: 120px;
-   padding-bottom: 120px;
+   padding-top: 130px;
+   padding-bottom: 130px;
    background-attachment: fixed;
 }
 #materials .section-head h2 { color: #880808; }
@@ -389,7 +352,7 @@ transform: scale(1.15);}
 .materials-item .item-wrap a { display: block; }
 .materials-item .materials-item-meta { padding: 12px 0; }
 .materials-item .materials-item-meta h5 a {
-   font: 13px/24px montserrat-bold, sans-serif;
+   font: 13px/24px montserrat-regular, sans-serif;
    color: #880808;
    margin-left: 7%;
 }
@@ -476,8 +439,8 @@ transform: scale(1.15);}
 #about {
    background: #fff url(../images/patterns/grey.png);
    background-attachment: fixed;
-   padding-top: 156px;
-   padding-bottom: 144px;
+   padding-top: 170px;
+   padding-bottom: 200px;
    color: #A3A3A3;
 }
 #about .section-head h2,
