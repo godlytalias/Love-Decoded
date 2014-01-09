@@ -4,9 +4,7 @@ Adapted from Kreative 1.0
 Godly T.Alias
 */
 
-
 sup {font-size:xx-small; vertical-align:super;}
-
 /*==============*/
 /*gallery
 
@@ -195,7 +193,7 @@ transform: scale(1.15);}
    overflow: hidden;
    position: static;
    padding-top: 30px;
-   padding-bottom: 266px;
+   padding-bottom: 1000px;
 }
 
 /* FlexSlider Intro Slider Styles */
@@ -206,6 +204,7 @@ transform: scale(1.15);}
 .slider-text {
 	color: #737E8C;
    text-align: center;
+position:fixed;
    width: 85%;
    margin: 0px auto 0px auto;
 }
@@ -240,7 +239,7 @@ font-weight:300;
 	cursor: pointer;
 	z-index: 99999;
 	opacity: 0;
-   position: absolute;
+   position: fixed;
 	top: 50%;
 
    font: 0/0 a;
@@ -259,14 +258,14 @@ font-weight:300;
 .flex-direction-nav .flex-next {
 	right: 0px;
 	background: #2D3339 url(../images/direction-nav-right.png) no-repeat 53% 50%;
-	position: absolute;	
+	position: fixed;	
 	border-top-left-radius: 40px;
 	border-bottom-left-radius: 40px;
 }
 .flex-direction-nav .flex-prev {
 	left: 0px;
 	background: #2D3339 url(../images/direction-nav-left.png) no-repeat 47% 50%;
-	position: absolute;
+	position: fixed;
 	border-top-right-radius: 40px;
 	border-bottom-right-radius: 40px;
 }
@@ -402,6 +401,8 @@ font-weight:700;
 	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
 	-box-shadow: 0 0 10px rgba(0,0,0,.4);
 }
+
+.reveal-modal object{display:none;}
 .reveal-modal .description-box { padding: 18px 36px; }
 .reveal-modal .description-box h4 {
    font: 15px/24px 'Montserrat', sans-serif;
@@ -583,24 +584,17 @@ footer .social-links li {
 }
 footer .social-links li:first-child { margin-left: 0; }
 
-/* ================================================================== */
-
-/* m. Media Queries
-
-/* ================================================================== */
-
 
 /* small screens
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 836px) {
 
+
    /* adjust sections padding top */
-   #qa, #portfolio,
-   #journal, #about { padding-top: 120px; }
+   #qa, #materials,
+   #about { padding-top: 120px; }
 
-   /* adjust font size */
-   .intro, .testimonies .client-cite { font-size: 18px; }
-
+   
    /* intro section
    -------------------------------------------------------------------- */
    .slider-text h2 { font: 48px/66px 'Montserrat', Sans-serif; font-weight:400;}
@@ -614,12 +608,9 @@ footer .social-links li:first-child { margin-left: 0; }
 
    /* portfolio section
    -------------------------------------------------------------------- */
-   #portfolio #portfolio-wrapper { margin-top: 12px; }
-   #portfolio #portfolio-wrapper .col { width: 33.33333%; }
+   #materials #materials-wrapper { margin-top: 12px; }
+   #materials #materials-wrapper .col { width: 33.33333%; }
 
-   /* journal section
-   -------------------------------------------------------------------- */
-   #journal .blog-entries { margin-top: 30px; }
 
    /* about section
    -------------------------------------------------------------------- */
@@ -642,19 +633,7 @@ footer .social-links li:first-child { margin-left: 0; }
    .first { clear: none; }
    .m-first { clear: left; }
 
-   /* blog
-   -------------------------------------------------------------------- */
-   .post, #blog-entries .post { padding-top: 96px; }
-   .post p.lead, #blog-entries .post .post-content p { font-size: 18px; }
-   .post .entry-header h1 {
-      padding-right: 18px;
-      font-size: 43px;
-   }
-   .post .post-meta { margin-top: 6px; }
-   .post .post-image { margin: 12px 0 24px 0 }
-   .post .bio .about { padding-left: 18px; }
-
-}
+  }
 
 
 
@@ -665,7 +644,7 @@ footer .social-links li:first-child { margin-left: 0; }
 
    /* center align some text */
    .section-head, .intro, #about h3,
-   #journal .entry-header {
+ {
       text-align: center;
    }
 
@@ -673,21 +652,21 @@ footer .social-links li:first-child { margin-left: 0; }
    /* mobile navigation
    -------------------------------------------------------------------- */
 
-   header.mobile { height: 66px; }
-   header.mobile .logo a { top: 22px; }
+   header.mobile { height: 60px; }
+   header.mobile .logo a { top: 8px; }
 
    .mobile #nav-wrap {
       position: absolute;
       top: 0;
-      right: 20px;
-      width: auto;
+      right: 15px;
+      width: 130px;
       margin: 0;
    }
    .mobile #nav-wrap > a {
 	   width: 48px;
 		height: 48px;
-		text-align: left;
-		background-color: #11ABB0;
+		text-align: center;
+		background-color: #800808;
 		position: relative;
       border: none;
       float: right;
@@ -727,15 +706,20 @@ footer .social-links li:first-child { margin-left: 0; }
       text-align: left;
    }
    .mobile #nav-wrap ul#nav > li.active a {
-      color: #11ABB0 !important;
-      background: none;
+      color: #fff !important;
+      background: #800808;
+padding:10px;;
+   border-bottom-right-radius:4px;
+   border-bottom-left-radius:4px;
+border-top-right-radius:4px;
+   border-top-left-radius:4px;
    }
 
    /* display menu panels */
 	.mobile #nav-wrap:target > ul#nav	{
 	   display: block;
       padding: 12px 25px 24px 25px;
-      background: #4c4e5a;
+      background: url(../images/k-opacity-70.png);;
       margin: 0;
       clear: both;
    }
@@ -763,7 +747,7 @@ font-weight:400;
       min-height: 300px;
    }
 
-   /* portfolio section
+   /* materials section
    --------------------------------------------------------------------- */
     .reveal-modal {
    	margin-left: -42%;
@@ -779,23 +763,7 @@ font-weight:400;
       float: none;
       width: auto;
    }
-   #contact input,
-	#contact textarea,
-	#contact select {
-      width: 100%;
-      margin-bottom: 30px;
-	}
-   #contact button.submit {
-      margin-left: 0;
-   }
-   #message-warning,
-   #message-success {
-      width: 100%;
-   }
-
-
-
-
+  
 
    /* footer
    ------------------------------------------------------------------------ */
@@ -824,12 +792,6 @@ font-weight:400;
       margin-top: 24px;
    }
 
-    /* journal section
-   ------------------------------------------------------------------------- */
-   #journal .entry-title h3 {
-     font-size: 28px;
-     line-height: 36px;
-   }
 
 }
 
