@@ -193,20 +193,20 @@ transform: scale(1.15);}
    overflow: hidden;
    position: static;
    padding-top: 30px;
-   padding-bottom: 1000px;
 }
 
 /* FlexSlider Intro Slider Styles */
 .slides {
    max-height: 660px;
-   overflow: hidden;
+   padding-bottom: 1000px;
 }
 .slider-text {
 	color: #737E8C;
    text-align: center;
 position:fixed;
+   z-index:150;
    width: 85%;
-   margin: 0px auto 0px auto;
+   margin: 0px 0px 0px 0px;
 }
 .slider-text h2 {
    font: 56px/78px 'Montserrat', Sans-serif;
